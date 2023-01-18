@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>닮은냥 테스트</title>
+    <meta name="title" content="닮은냥 테스트">
+    <meta name="subject" content="사진으로 보는 닮은냥 테스트, 나와 닮은 고양이를 찾아보세요!">
+    <meta name="keywords" content="닮은냥 테스트, 인공지능 고양이 테스트, 닮은냥, 고양이 테스트, 나와 닮은 고양이, 닮은 고양이 찾기, 얼굴로 보는 고양이, 얼굴 고양이, 고양이상, simcat, 고양이상 , 인공지능 동물상, AI 얼굴상, AI 고양이">
+    <meta name="author" content="simcat">
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="https://simcat.site" />
+    <meta property="og:url" content="https://simcat.site" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="닮은냥 테스트" />
+    <meta property="og:description" content="얼굴로 보는 인공지능 닮은 고양이 테스트, 나와 닮은 고양이를 찾아보세요! 22개의 고양이 사진 데이터로 학습한 인공지능이 나의 얼굴로 닮은 고양이의 종류와 특징을 찾아드립니다. 회원가입도 필요없이 화면에서 바로 확인해보세요! 사진 데이터는 그 어디에도 전송되지 않습니다. 인공지능이 보는 나의 닮은냥 테스트 한번 해보세요! 닮은냥 테스트를 통해 나와 닮은 고양이 찾기를 할 수 있습니다."/>
+    <meta property="og:image" content="favicon.png" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-63c6c0b712a8cb9c"></script>
+
+
+
+
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- 구글 태그 매니저 할것 -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145482737-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-145482737-6');
+    </script> -->
+</head>
+
+<body>
+    <nav class="p-3 container navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="https://simcat.site/"><span><img src="favicon.png" alt="로고"></span> 닮은냥 테스트</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <!-- <li class="nav-item active" onclick="gtag('event', '조코딩 유튜브 클릭', {'event_category': '조코딩 유튜브 클릭','event_label': '상단 메뉴'});">
+                    <a class="nav-link" id="yotube-top-link" href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg">조코딩 유튜브 채널</a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+    <section class="section">
+        <h1 class="title"> <span><img src="favicon.png" alt="로고"></span> 닮은냥 테스트 </h1>
+        <h2 class="subtitle">사진으로 보는 닮은 고양이 테스트</h2>
+        <h2 class="sr-only">나는 어떤 고양이와 닮았을까? 나와 닮은 고양이 찾기를 해보세요!</h2>
+        <h3 class="sr-only">22종 고양이의 사진 데이터로 학습한 인공지능이 나의 얼굴로 닮은 고양이와 그 특징을 찾아드립니다.</h3>
+        <h4 class="sr-only">본 서비스는 Google의 인공지능 teachable machine 2.0을 활용하였습니다.</h4>
+        <p class="sr-only">사진으로 보는 닮은 고양이 테스트, 나와 닮은 고양이를 찾아보세요! 22개의 고양이 사진 데이터로 학습한 인공지능이 나의 얼굴로 닮은 고양이의 종류와 특징을 찾아드립니다. 회원가입도 필요없이 화면에서 바로 확인해보세요! 사진 데이터는 그 어디에도 전송되지 않습니다. 인공지능이 보는 나의 닮은냥 테스트 한번 해보세요! 닮은냥 테스트를 통해 나와 닮은 고양이 찾기를 할 수 있습니다.</p>
+    </section>
+    
+    
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <div class="mt-3 container file-upload">
+        <div class="image-upload-wrap">
+            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+            <div class="drag-text">
+                <img src="upload.svg" class="mt-5 pt-5 upload">
+                <h3 class="mb-5 pb-5 pt-4  upload-text">사진을 드래그하거나 <br>눌러서 업로드하세요 :)</h3>
+            </div>
+        </div>
+        <div class="file-upload-content">
+            <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+            <div id="loading" class="animated bounce">
+                <div class="spinner-border" role="status">
+                    <span class="sr-only">Analyzing...</span>
+                </div>
+                <p class="text-center">AI가 당신과 닮은 고양이를 분석중입니다.</p>
+            </div>
+            <p class="result-message"></p>
+            <div id="label-container" class="d-flex flex-column justify-content-around"></div>
+            <div class="addthis_inline_share_toolbox"></div>
+            <!-- _krs3 -->
+            <div class="pt-3 image-title-wrap">
+
+        
+                
+            
+                <button type="button p-2" class="try-again-btn" onclick="gaReload1();" data-toggle="modal" data-target="#adModal">
+                    <span class="try-again-text">다른 사진으로 재시도</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- 카카오 ad 관련 코드
+         <div class="mt-2 container d-flex justify-content-center ad-banner">
+        <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-1ibeto5pa83fn" data-ad-width="320" data-ad-height="100"></ins>
+    </div>
+    <div class="mt-2 container d-flex justify-content-center ad-banner">
+        <ins class="kakao_ad_area" style="display:none;" 
+     data-ad-unit    = "DAN-1jefy9znk6ibb" 
+     data-ad-width   = "300" 
+     data-ad-height  = "250"></ins>
+    </div> -->
+
+<!-- 카카오 ad cdn
+     <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+    <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script> -->
+    
+    
+    <footer class="footer pt-5 container d-flex justify-content-center">
+        <div>
+            <p style="color:rgb(110, 108, 108);">&copy; Simcat 2023. All Rights Reserved. </p>
+
+        </div>
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="adModal" tabindex="-1" role="dialog" aria-labelledby="adModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="adModalLabel">(AD)광고 - 재시도를 한번 더 눌러주세요.</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- <div class="modal-body d-flex justify-content-center">
+                    <ins class="kakao_ad_area" style="display:none;" 
+ data-ad-unit    = "DAN-t89oh3sc0ew5" 
+ data-ad-width   = "300" 
+ data-ad-height  = "250"></ins>
+                </div> -->
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button p-2" class="try-again-btn" onclick="gaReload2();">
+                        <span class="try-again-text">다른 사진으로 재시도</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function gaReload1() {
+            
+        }
+        function gaReload2() {
+            
+            window.location.reload();
+        } 
+     
+    </script>
+       <!--
+        gtag('event', '다른 사진으로 재시도 1차', {
+                'event_category': '다른 사진으로 재시도'
+            });
+        gtag('event', '다른 사진으로 재시도 2차', {
+                'event_category': '다른 사진으로 재시도'
+            }); -->
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $('.image-upload-wrap').hide();
+                    $('#loading').show();
+                    $('.file-upload-image').attr('src', e.target.result);
+                    $('.file-upload-content').show();
+                    $('.image-title').html(input.files[0].name);
+                };
+                reader.readAsDataURL(input.files[0]);
+                init().then(function() {
+                    predict();
+                    $('#loading').hide();
+                });
+            } else {
+                removeUpload();
+            }
+        }
+
+        function removeUpload() {
+            $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+            $('.file-upload-content').hide();
+            $('.image-upload-wrap').show();
+        }
+        $('.image-upload-wrap').bind('dragover', function() {
+            $('.image-upload-wrap').addClass('image-dropping');
+        });
+        $('.image-upload-wrap').bind('dragleave', function() {
+            $('.image-upload-wrap').removeClass('image-dropping');
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        
+        let model, webcam, labelContainer, maxPredictions;
+        async function init() {
+            const URL = "https://teachablemachine.withgoogle.com/models/joqbzDZ9i/";
+            const modelURL = URL + "model.json";
+            const metadataURL = URL + "metadata.json";
+            model = await tmImage.load(modelURL, metadataURL);
+            maxPredictions = model.getTotalClasses();
+            labelContainer = document.getElementById("label-container");
+            for (let i = 0; i < maxPredictions; i++) {
+                var element = document.createElement("div")
+                element.classList.add("d-flex");
+                labelContainer.appendChild(element);
+            }
+        }
+        async function predict() {
+            var image = document.getElementById("face-image")
+            const prediction = await model.predict(image, false);
+            prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+            console.log(prediction[0].className);
+            var resultImage, resultTitle, resultExplain, resultCat, resultCeleb,resultSuffix;
+         
+            switch (prediction[0].className) {
+                case "샴 고양이":
+                    resultImage;
+                    resultTitle = "샴"
+                    resultExplain = "귀여운 샴 고양이"
+                
+                    <!-- gtag('event', '남자 결과 강아지상', {'event_category': '남자 결과'}); -->
+                    break;
+                case "시베리안 고양이":
+                    resultImage;
+                    resultTitle = "시베리안"
+                    resultExplain = "귀여운 시베리안 고양이"
+                    break;
+                case "엑조틱 숏헤어 고양이":
+                    resultImage;
+                    resultTitle = "엑조틱"
+                    resultExplain = "귀여운 엑조틱 고양이"
+                    break;
+                case "렉돌 고양이":
+                    resultImage;
+                    resultTitle = "렉돌"
+                    resultExplain = "귀여운 렉돌 고양이"
+                    break;
+                default:
+                    resultTitle = "알수없음";
+                    resultExplain = "";
+                    resultCeleb = "";
+                    
+            }
+         
+            
+            var title = "<div class='" + resultTitle + "-cat-title'>" + resultTitle + "</div>"
+            var explain = "<div class='cat-explain pt-2'>" + resultExplain + "</div>"
+            var suffix = "<div class='pt-2 pb-2 suffix'>"  +"비고 - 닮은 고양이의 결과는 5개까지만 노출되게 설정하였습니다." + "</div>"
+            $('.result-message').html(title + explain + suffix);
+            var barWidth;
+            for (let i = 0; i < 5; i++) {
+                if (prediction[i].probability.toFixed(2) > 0.1) {
+                    barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + "%";
+                } else if (prediction[i].probability.toFixed(2) >= 0.01) {
+                    barWidth = "4%"
+                } else {
+                    barWidth = "2%"
+                }
+                var labelTitle;
+                switch (prediction[i].className) {
+                    case "샴 고양이":
+                        labelTitle = "샴"
+                        break;
+                    case "자바니즈 고양이": 
+                        labelTitle = "자바니즈"
+                        break;
+                    case "하바나 브라운 고양이":
+                        labelTitle = "하바나"
+                        break;
+                    case "오리엔탈 쇼트헤어 고양이":
+                        labelTitle = "오리엔탈"
+                        break;
+                    case "사바나 고양이":
+                        labelTitle = "사바나"
+                        break;
+                    case "코랏 고양이":
+                        labelTitle = "코랏"
+                        break;
+                    case "셀커크 렉스 고양이":
+                        labelTitle = "셀커크"
+                        break;
+                    case "소말리 고양이":
+                        labelTitle = "소말리"
+                        break;
+                    case "싱가푸라 고양이":
+                        labelTitle = "싱가푸라"
+                        break;
+                    case "먼치 킨 고양이":
+                        labelTitle = "먼치킨"
+                        break;
+                    case "히말리안 고양이":
+                        labelTitle = "히말리안"
+                        break;
+                    case "아메리칸 컬 고양이":
+                        labelTitle = "아메리칸"
+                        break;
+                    case "코니시 렉스 고양이":
+                        labelTitle = "코니시"
+                        break;
+                    case "시베리안 고양이":
+                        labelTitle = "시베리안"
+                        break;
+                    case "스코티시 폴드 고양이":
+                        labelTitle = "스코티시"
+                        break;
+                    case "러시안 블루 고양이":
+                        labelTitle = "러시안"
+                        break;
+                    case "엑조틱 숏헤어 고양이":
+                        labelTitle = "엑조틱"
+                        break;
+                    case "스핑크스 고양이":
+                        labelTitle = "스핑크스"
+                        break;
+                    case "렉돌 고양이":
+                        labelTitle = "렉돌"
+                        break;
+                    case "메인쿤 고양이":
+                        labelTitle = "메인쿤"
+                        break;
+                    case "페르시안 고양이":
+                        labelTitle = "페르시안"
+                        break;
+                    case "브리티시 숏헤어 고양이":
+                        labelTitle = "브리티시"
+                        break;
+                    default:
+                        labelTitle = "알수없음"
+                }
+                var label = "<div class='cat-label d-flex align-items-center'>" + labelTitle + "</div>"
+                var bar = "<div class='bar-container position-relative container'><div class='" + labelTitle + "-box'></div><div class='d-flex justify-content-center align-items-center " + labelTitle + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
+                var labelBar = label + bar
+                
+                labelContainer.childNodes[i].innerHTML =labelBar;
+                
+            }
+        }
+    </script>
+    <script>
+        function iosApp() {
+            document.getElementById("addThis").style.display="none";
+            
+            var kakao = document.getElementsByClassName("kakao_ad_area");
+            for (var i = 0; i < kakao.length; i++) {
+              if(kakao[i]) {
+                  kakao[i].style.display="none";
+              }
+            }
+        }
+    </script>
+</body>
+<!-- 
+image input box
+Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+ -->
+
+</html>
