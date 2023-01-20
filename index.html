@@ -214,8 +214,8 @@ data-ad-height = "250"></ins>
          
             switch (prediction[0].className) {
                 case "샴 고양이":
-                    
-                    resultTitle = "샴"
+                    resultImage;
+                    resultTitle = "샴";
                     resultExplain = "사실상 독립심이 강한 고양이로서는 조금 특이한 성격일 정도로 사람 손 타는 걸 좋아하며 개체별 특이성이 강한 개냥이. 개체에 따라 다르지만, 처음 보는 사람에게도 놀자며 들이대는 경우도 많고, 대체적으로는 온순하고 느긋한 성격이다."
                     break;
                 case "시베리안 고양이":
@@ -330,7 +330,7 @@ data-ad-height = "250"></ins>
             var title = "<div class='" + resultTitle + "-cat-title'>" + resultTitle + "</div>"
             var explain = "<div class='cat-explain pt-2'>" + resultExplain + "</div>"
             var suffix = "<div class='pt-2 pb-2 suffix'>"  +"비고 - 닮은 고양이의 결과는 5개까지만 노출되게 설정하였습니다." + "</div>"
-            $('.result-message').html(iamge+ title + explain + suffix);
+            $('.result-message').html(title + explain + suffix);
             var barWidth;
             for (let i = 0; i < 5; i++) {
                 if (prediction[i].probability.toFixed(2) > 0.1) {
