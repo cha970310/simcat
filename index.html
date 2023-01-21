@@ -19,7 +19,7 @@
     <meta property="og:title" content="닮은냥 테스트" />
     <meta property="og:description" content="얼굴로 보는 인공지능 닮은 고양이 테스트, 나와 닮은 고양이를 찾아보세요! 22개의 고양이 사진 데이터로 학습한 인공지능이 나의 얼굴로 닮은 고양이의 종류와 특징을 찾아드립니다. 회원가입도 필요없이 화면에서 바로 확인해보세요! 사진 데이터는 그 어디에도 전송되지 않습니다. 인공지능이 보는 나의 닮은냥 테스트 한번 해보세요! 닮은냥 테스트를 통해 나와 닮은 고양이 찾기를 할 수 있습니다."/>
     <meta property="og:image" content="favicon.png" />
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="russian.jpg" type="image/x-icon">
     <link rel="icon" href="favicon.png" type="image/x-icon">
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-63c6c0b712a8cb9c"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3031219505022464"crossorigin="anonymous"></script>
@@ -27,8 +27,8 @@
 </script>
 </head>
 <body>
-    <nav class="p-3 container navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="https://simcat.site/"><span><img src="favicon.png" alt="logo"></span> 닮은냥 테스트</a>
+    <nav class="p-3 container navbar navbar-expand-lg navbar-light" ">
+        <a class="navbar-brand" href="https://simcat.site/"><span><img src="favicon.png" alt="logo"></span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,7 +41,7 @@
                     
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Simdog
+                    <a class="nav-link" href="https://simdog.site" aria-disabled="true">Simdog
                         <span class="sr-only">(current)</span>
                     </a>
                     </li>
@@ -59,12 +59,12 @@
     
     
     <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <div class="mt-3 container file-upload">
+    <div class="mt-3 container file-upload" >
         <div class="image-upload-wrap">
             <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
             <div class="drag-text">
                 <img src="upload.svg" class="mt-5 pt-5 upload">
-                <h3 class="mb-5 pb-5 pt-4  upload-text">사진을 드래그하거나 <br>눌러서 업로드하세요 :)</h3>
+                <h4 class="mb-4 pb-5 pt-4  upload-text">고양이 혹은 본인의 정면 <br> 사진을 드래그하거나 <br>눌러서 업로드하세요 :)</h4>
             </div>
         </div>
         <div class="file-upload-content">
@@ -79,7 +79,7 @@
             <div id="label-container" class="d-flex flex-column justify-content-around"></div>
             <div class="addthis_inline_share_toolbox"></div>
             <div class="pt-3 image-title-wrap">            
-                <button type="button p-2" class="try-again-btn" onclick="gaReload1();" data-toggle="modal" data-target="#adModal">
+                <button type="button p-2" class="try-again-btn" onclick="reloadDefault();" data-toggle="modal" data-target="#adModal">
                     <span class="try-again-text">다른 사진으로 재시도</span>
                 </button>
             </div>
@@ -130,7 +130,7 @@ data-ad-height = "250"></ins>
                     data-ad-height = "250"></ins>
                 </div>    -->
                 <div class="modal-footer d-flex justify-content-center">
-                    <button type="button p-2" class="try-again-btn" onclick="gaReload2();">
+                    <button type="button p-2" class="try-again-btn" onclick="reloadAgain();">
                         <span class="try-again-text">다른 사진으로 재시도</span>
                     </button>
                 </div>
@@ -139,10 +139,10 @@ data-ad-height = "250"></ins>
     </div>
     
     <script>
-        function gaReload1() {
+        function reloadDefault() {
       
         }
-        function gaReload2() {
+        function reloadAgain() {
          
             window.location.reload();
         }
@@ -216,111 +216,132 @@ data-ad-height = "250"></ins>
                 case "샴 고양이":
                     resultImage = 'siam.jpg';
                     resultTitle = "샴";
-                    resultExplain = "사실상 독립심이 강한 고양이로서는 조금 특이한 성격일 정도로 사람 손 타는 걸 좋아하며 개체별 특이성이 강한 개냥이. 개체에 따라 다르지만, 처음 보는 사람에게도 놀자며 들이대는 경우도 많고, 대체적으로는 온순하고 느긋한 성격이다."
+                    resultExplain = "샴고양이는 사실상 독립심이 강한 고양이로서 조금 특이한 성격일 정도로 사람 손 타는 걸 좋아하며 개체별 특이성이 강한 개냥이. 개체에 따라 다르지만, 처음 보는 사람에게도 놀자며 들이대는 경우도 많고, 대체적으로는 온순하고 느긋한 성격이다.";
+                    resultMoreExplain = '샴이 나온 그대, 당신은 그저 온실속 화초입니다. 초롱초롱 귀엽게 생겼을 거라 지레 짐작합니다.';
                     break;
                 case "시베리안 고양이":
                     resultImage = 'siberian.jpg';
                     resultTitle = "시베리안"
-                    resultExplain = "시베리아의 가혹한 환경에서 자연발생한 종의 특성 상 유전병이 거의 없으나 심장벽이 두꺼워지는 심근 비대증을 조심해야 한다. 체력이 매우 뛰어나고, 골격이 크고 단단하며, 온몸이 근육질이다. 시베리아의 추운 환경에 적응해야 했기 때문에 털이 3중모(triple coat)로 매우 풍성하다."
+                    resultExplain = "시베리안 고양이는 장난을 매우 좋아하며 활발하고 총명한 고양이로 가족와 함께하는 것을 좋아합니다. 다른 반려동물과도 잘 어울리며 가족들의 많은 관심을 필요로 합니다. 모르는 사람을 신뢰하지 않으며 낯선 사람이 쓰다듬거나 손을 대는 것을 싫어합니다."
+                    resultMoreExplain= '그쪽은 외모가 재밌을지도 모르겠네요. 털이 북슬북슬한게 상남자같지만 사실은 겁쟁이가 아닐까요? 자기관리를 열심히 하시길 바랍니다.';
                     break;
                 case "엑조틱 숏헤어 고양이":
                     resultImage = 'exotic.jpg';
                     resultTitle = "엑조틱"
-                    resultExplain = "엑조틱 숏헤어 고양이는 납작하고 넓은 두개골 모양을 가지고 있어 신체적 특징인 납작한 얼굴과 짧은 코를 가진 뇌두종족에 속합니다. 이러한 해부학적 특성은 피부, 눈, 호흡 문제와 같은 건강 문제를 일으킬 수 있을 뿐만 아니라 열을 견딜 수 있는 능력도 떨어지게 할 수 있습니다."
+                    resultExplain = "엑조틱 숏헤어 고양이는 호기심도 있고 장난도 잘 치지만 활발하게 돌아다니기보다는 발라당 드러누워있는 것을 좋아합니다."
+                    resultMoreExplain = '심술궂게 생긴 그대는 좀 웃고 다닐 필요가 있으며 심성을 좀 곱게 쓸 필요가 있을 듯합니다 ㅎㅎ'
                     break;
                 case "렉돌 고양이":
                     resultImage = 'ragdoll.jpg';
                     resultTitle = "렉돌"
                     resultExplain = "렉돌 고양이는 외국에서 개냥이를 넘어선 “강아지”라고 부를 정도로 애교가 많고 경계심이 없는 편이다. 게다가, 랙돌은 차분하고 장난기도 많아 어린아이, 반려견과 함께 잘 지낼 수 있다."
+                    resultMoreExplain = '지금 당장 거울을 보도록 실시. 본인이 귀엽다고 생각할 수 있지만 큰 착오임, 렉돌 고양이가 100배 더 귀여울 듯합니다.'
                     break;
                 case "자바니즈 고양이":
                     resultImage = 'javanese.jpg';
                     resultTitle = "자바니즈"
-                    resultExplain = "자바니즈의 성격도 발리니즈와 비슷하여 주인에게 충실하며 헌신적인 애정을 보여준다. 온화하고 활달한 성격을 보여 주지만, 외로움도 잘 타므로 신경을 써줘야 한다. 털이 빠지는 정도는 적기 때문에 털관리는 자주 할 필요는 없다."
+                    resultExplain = "자바니즈의 성격도 발리니즈와 비슷하여 주인에게 충실하며 헌신적인 애정을 보여줍니다. 온화하고 활달한 성격을 보여 주지만, 외로움도 잘 타므로 신경을 써줘야 합니다."
+                    resultMoreExplain =' 지금 혼자 누워서 이중턱 만들고 배 긁으면서 보고 있진 않을까요?'
                     break;
                 case "하바나 브라운 고양이":
                     resultImage = 'havana.jpg';
                     resultTitle = "하바나"
-                    resultExplain = "하바나 브라운은 활달한 고양이지만 좋아하는 장난감만을 가지고 노는 경우가 많습니다. 이 고양이는 또한 가족과도 놀지만 때로는 고독을 즐기기도 합니다. 이 품종은 한 명과만 가깝게 지내면서 그에게 자신의 모든 것을 맡기는 경향이 있습니다."
+                    resultExplain = "하바나 브라운은 활달한 고양이지만 좋아하는 장난감만을 가지고 노는 경우가 많습니다. 이 고양이는 또한 가족과도 놀지만 때로는 고독을 즐기기도 합니다."
+                    resultMoreExplain ='하바나 브라운은 고독을 즐기지만, 사람이라면 친구를 만들기를 바랍니다.'
                     break;
                 case "오리엔탈 쇼트헤어 고양이":
                     resultImage = 'oriental.jpeg';
                     resultTitle = "오리엔탈"
                     resultExplain = "오리엔탈 숏헤어의 성격은 타고난 익살꾼이며 자신만만한 고양이입니다. ​샴처럼 호기심 많고 장난기 많은 성격을 가진듯 합니다. 사람과 친화적이고 믿음이 강한 성격이며, 자신의 존재가 무시당하게 되면 떼쟁이가 되기도 하는 귀요미입니다."
+                    resultMoreExplain = '어쩌면 꼭 양말을 획득한 도비처럼 생겼을 것 같습니다. 성격은 좋겠으니 친구는 있겠습니다.'
                     break;
                 case "코랏 고양이":
                     resultImage = 'corat.jpeg';
                     resultTitle = "코랏"
-                    resultExplain = "아주 영리하고 조용한 고양이로 얌전하고 점잖은 성격이에요. 하지만 반려인과는 무척 친밀한 유대감을 형성하는 편이에요. 외로움을 많이 타서 오랫동안 혼자 두는 건 앙대요!"
+                    resultExplain = "코랏 고양이는 아주 영리하고 조용한 고양이로 얌전하고 점잖은 성격입니다. 하지만 반려인과는 무척 친밀한 유대감을 형성하는 편입니다. 외로움을 많이 타서 오랫동안 혼자 두는 건 앙대요!"
+                    resultMoreExplain = '고양이의 성격이라면 괜찮지만 사람이라면 INFP일 정도로 골치 아픈 성격일 것 같습니다.';
                     break;
                 case "셀커크 렉스 고양이":
                     resultImage = 'selkirk.jpg';
                     resultTitle = "셀커크"
-                    resultExplain = "셀커크 렉스 고양이는 호기심도 많고 장난기도 많아 집사에게 장난도 잘 친다. 그리고 똑똑한 편이어서 쉽게 지루함을 느낀다. 따라서, 먹이 퍼즐이나 장난감으로 자주 놀아주는 게 좋다."
+                    resultExplain = "셀커크 렉스 고양이는 호기심도 많고 장난기도 많아 집사에게 장난도 잘 치고 똑똑한 편이어서 쉽게 지루함을 느낍니다."
+                    resultMoreExplain = '악성곱슬을 타고난 자. 고민이 많으실 것 같습니다.';
                     break;
                 case "소말리 고양이":
                     resultImage = 'soomaali.jpeg';
                     resultTitle = "소말리"
                     resultExplain = "소말리는 점프와 놀이를 좋아하는 활달한 성격을 가지고 있지만 가정에서 기르기 쉬운 고양이입니다. 소말리는 사람과 다른 동물들을 좋아합니다. 이 고양이는 사회성이 높으며 친구가 있는 것을 즐깁니다."
+                    resultMoreExplain = '매우 평범합니다.';
                     break;
                 case "싱가푸라 고양이":
                     resultImage = 'singapura.jpg';
                     resultTitle = "싱가푸라"
-                    resultExplain = "싱가푸라는 울음소리가 작지만 수다쟁이다. 그리고 호기심도 많고 장난기 많다. 또한, 집사와 함께 있고 노는 걸 좋아하는 개냥이다."
+                    resultExplain = "싱가푸라는 울음소리가 작지만 수다쟁이고 호기심도 많고 장난기 많습니다. 또한, 집사와 함께 있고 노는 걸 좋아하는 개냥이예요!"
+                    resultMoreExplain = '어디서 많이 본 듯한 외모입니다.';
                     break;
                 case "먼치 킨 고양이":
                     resultImage = 'munchkin.jpg';
                     resultTitle = "먼치킨"
-                    resultExplain = "먼치킨은 호기심이 많고 활발한 편이에요. 사람들과 쉽게 친해지는 편이라 개냥이라고 불리기도 합니다. 또한, 먼치킨 고양이는 똑똑한 편인데요. 다리가 짧아 점프 능력이 좋지 않지만, 주변 환경을 잘 활용해 높은 곳에도 잘 올라가곤 한답니다."
+                    resultExplain = "먼치킨은 호기심이 많고 활발한 편이며, 사람들과 쉽게 친해지는 편이라 개냥이라고 불리기도 합니다. 또한, 먼치킨 고양이는 똑똑한 편인데요. 다리가 짧아 점프 능력이 좋지 않지만, 주변 환경을 잘 활용해 높은 곳에도 잘 올라가곤 한답니다."
+                    resultMoreExplain='다리가 짧은 당신은 유감스럽게도 유전적 요인이 제일 큽니다. 이것을 만든 저도 이게 나왔습니다,,'
                     break;
                 case "히말리안 고양이":
                     resultImage = 'himalayan.jpg';
                     resultTitle = "히말리안"
                     resultExplain = "점잖고 온화하며 쓰다듬는걸 좋아한다고 합니다. 관심의 대상이 되는것을 즐기지만 페르시안 고양이보다는 조금 더 활동적이고 노는걸 좋아한다고 하네요. 페르시안과 마찬가지로 과묵한 편이지만 목소리는 그다지 작지 않습니다."
+                    resultMoreExplain ='외모로만 본다면, 반골의 기질을 지닌 그대는 자신의 이익보다 집단의 이익을 우선시할 필요가 있을 지도 모릅니다.'
                     break;
                 case "아메리칸 컬 고양이":
                     resultImage = 'american.jpg';
                     resultTitle = "아메리칸"
-                    resultExplain = "아메리칸 컬은 겁이 없고 활발한 편이다. 그리고 호기심이 많아 닫혀있는 문, 서랍장은 모두 열 수도 있다. 장난기가 많고 성묘가 돼도 아기 고양이 성격이 그대로 남아있어 “피터팬 고양이”라고 알려져 있다."
+                    resultExplain = "아메리칸 컬은 겁이 없고 활발한 편이다. 그리고 호기심이 많아 닫혀있는 문, 서랍장은 모두 열 수도 있습니다. 장난기가 많고 성묘가 돼도 아기 고양이 성격이 그대로 남아있어 “피터팬 고양이”라고 알려져 있습니다."
+                    resultMoreExplain = '라이온킹 심바를 닮아서 사자인 척하는 고양이입니다. 그건 고양이에 대한 설명이고 주제 파악이 필요할 지도 모릅니다.'
                     break;
                 case "코니시 렉스 고양이":
                     resultImage = 'cornish.jpg';
                     resultTitle = "코니시"
                     resultExplain = "비단결의 부드러운 고양이인 코시니 렉스는 주인의 옆에 있기를 좋아하며 매일 함께 하는 시간을 가져야 합니다. 코시니 렉스는 운동을 좋아하는 고양이이며 달리기, 점프, 놀이에 대한 애착에서 독보적입니다."
+                    resultMoreExplain ='고양이는 귀엽지만, 벌크업이 필요한 분일지도 모르겠네요 ㅋㅋ';
                     break;
                 case "스코티시 폴드 고양이":
                     resultImage = 'scotish.jpg';
                     resultTitle = "스코티시"
                     resultExplain = "스코티시 폴드는 돌보기도 쉽고 함께 생활하기에도 어려움이 없는 상냥하고 매력적인 고양이입니다. 스코티시 폴드는 모든 가족들과 스스럼없이 잘 지냅니다. 스코티시 폴드의 꼬리는 부드럽게 다루어야 합니다."
+                    resultMoreExplain = '스코티시 폴드 고양이가 나온 당신은 아마 주변에서 흡인력있는 사람으로서 인복을 타고난 자일 가능성이 있습니다. 필살기인 "슈렉 고양이 눈"으로 원하는 것을 쟁취할 수 있습니다.';
                     break;
                 case "러시안 블루 고양이":
                     resultImage = 'russian.jpg';
                     resultTitle = "러시안"
-                    resultExplain = "러시안 블루는 은회색의 단모종 고양이이다. 푸른빛이 도는 회색털과 초록색 눈으로 유명하다. 러시아가 원산지이고 조용하고 온순한 성격으로 잘 울지 않으며, 울어도 그 소리가 무척 작다."
+                    resultExplain = "러시안 블루는 은회색의 단모종 고양이이다. 푸른빛이 도는 회색털과 초록색 눈으로 유명합니다. 러시아가 원산지이고 조용하고 온순한 성격으로 잘 울지 않으며, 울어도 그 소리가 무척 작습니다."
+                    resultMoreExplain = 'MBTI중 I의 면모가 가장 두드러지게 나타나는 사람일 것 같습니다. 얌전한게 예쁘게도 생겨서 누구한테도 미움받지 않고 순탄하게 살아가겠군요';
                     break;
                 case "스핑크스 고양이":
                     resultImage = 'spinx.jpeg';
                     resultTitle = "스핑크스"
-                    resultExplain = "스핑크스 고양이는 상냥하고 민첩하며, 특히 다른 고양이에 비해 사람의 말귀를 알아듣는 능력이 좋아서 주인의 기분이나 상황에 따라 눈치있게 움직이는 머리 좋은 고양이이다. 때문에 어렸을 때부터 키우면 흔히 말하는 “개냥이”, “이불냥이”가 될 소질이 제일 많은 종이기도 하다."
+                    resultExplain = "스핑크스 고양이는 상냥하고 민첩하며, 특히 다른 고양이에 비해 사람의 말귀를 알아듣는 능력이 좋아서 주인의 기분이나 상황에 따라 눈치있게 움직이는 머리 좋은 고양이며, 때문에 어렸을 때부터 키우면 흔히 말하는 “개냥이”, “이불냥이”가 될 소질이 제일 많은 종이기도 합니다."
+                    resultMoreExplain ='당신은 반지 도둑이 될 가능성이 크군요? ㅋㅋ ㅋㅋㅋ ㅋㅋ'
                     break;
                 case "메인쿤 고양이":
                     resultImage = 'maine.jpg';
                     resultTitle = "메인쿤"
                     resultExplain = "메인쿤 고양이는 온순한 성격의 고양이인 메인쿤은 어떤 환경에 대해서도 적응력이 높으며 무겁지만 윤기가 있는 피모를 특징으로 합니다. 메인쿤 고양이는 장모 품종 중 유일하게 미국이 원산지인 고양이입니다."
+                    resultMoreExplain = '무섭게만 생긴 당신, 어쩌면 유산소 운동이 필요할지도?';
                     break;
                 case "페르시안 고양이":
                     resultImage = 'persian.jpg';
                     resultTitle = "페르시안"
-                    resultExplain = "페르시안은 조용하고 온순한 성격을 가졌다. 성격처럼 조용한 환경과 부드러운 사람을 선호한다. 페르시안을 반려하면 대부분의 시간을 소파에 느긋하게 누워있는 것을 볼 수 있다. 목소리 역시 조용하다."
+                    resultExplain = "페르시안은 조용하고 온순한 성격을 가졌다. 성격처럼 조용한 환경과 부드러운 사람을 선호합니다. 페르시안을 반려하면 대부분의 시간을 소파에 느긋하게 누워있는 것을 볼 수 있습니다. 목소리 역시 조용합니다."
+                    resultMoreExplain ='왜 항상 화가 나있습니까? 주변인들이 보기만해도 피곤할 것 같네요';
                     break;
                 case "브리티시 숏헤어 고양이":
                     resultImage = 'british.jpg';
                     resultTitle = "브리티시"
                     resultExplain = "브리티시 숏헤어는 침구가 될 수 있는 매우 유쾌한 고양이입니다. 이 고양이는 까다롭지 않고 조용합니다. 이 고양이는 충성심히 강하고 사랑스러우며 모든 가족들과 친근하게 지낼 수 있습니다. 브리티시 숏헤어는 놀이를 좋아하지만 장시간 함께 놀아줘야 하는 것은 아닙니다."
+                    resultMoreExplain = '뭔가 떠오른 문장은, 매너가 사람을 만든다고 합니다.'
                     break;
                
                 default:
-                    ;
+                    resultImage = 'favicon.png';
                     resultTitle = "알 수 없음";
                     resultExplain = "오류로 인해 AI 분석이 노출되지 않습니다.";
                     
@@ -329,8 +350,13 @@ data-ad-height = "250"></ins>
             document.getElementById("face-image").src = resultImage;
             var title = "<div class='" + resultTitle + "-cat-title'>" + resultTitle + "</div>"
             var explain = "<div class='cat-explain pt-2'>" + resultExplain + "</div>"
-            var suffix = "<div class='pt-2 pb-2 suffix'>"  +"비고 - 닮은 고양이의 결과는 5개까지만 노출되게 설정하였습니다." + "</div>"
-            $('.result-message').html(title + explain + suffix);
+            var moreExplain = "<div class='cat-moreExplain'><details>" +"<summary>"+"MZ세대를 위한 설명"+ "</summary>"
+                    +'<p>'+resultMoreExplain + "</p>"
+                 +"</details></div>"
+            var suffix = "<div class='pt-2 pb-2 suffix'>"  +"비고 - 닮은 고양이의 결과는 5개까지만 노출되게 설정하였습니다." +'<br>'
+                +" * MZ세대를 위한 설명은 재미로만 봐주시길 바랍니다. 감사합니다 :)"
+                + "</div>"
+            $('.result-message').html(title + explain + moreExplain+ suffix);
             var barWidth;
             for (let i = 0; i < 5; i++) {
                 if (prediction[i].probability.toFixed(2) > 0.1) {
