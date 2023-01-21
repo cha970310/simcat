@@ -4,35 +4,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
 
 /* Vars and Reset */
-
+/* daibiao color #614b0e */
 body {
     font-family: 'Noto Sans KR', sans-serif;
     background-color: #ffffff;
     box-sizing: border-box;
-    color: #35465d;
+    color: #614b0e;
   }
   nav{
-    border-bottom: 1px solid #a1c6dd;
+    border-bottom: 1px solid #614b0e;
   }
   footer{
-    border-top: 1px solid #a1c6dd;
+    border-top: 1px solid #614b0e;
   }
   .file-upload {
       padding: 15% 3%;
       margin: 0 auto;
       border-radius: 10px;
       border: solid 1.5px #f6f7fa;
-      background-color: #f6f7fa;
+      background-color: #BCAAA4;
+      
   }
   .file-upload-btn {
     width: 100%;
     margin: 0;
     color: #fff;
-    background: #1FB264;
+    background: #6d7772;
     border: none;
     padding: 10px;
     border-radius: 4px;
-    border-bottom: 4px solid #15824B;
+    border-bottom: 4px solid #6d7772;
     transition: all .2s ease;
     outline: none;
     text-transform: uppercase;
@@ -40,7 +41,7 @@ body {
   }
   
   .file-upload-btn:hover {
-    background: #1AA059;
+    background: #779a87;
     color: #ffffff;
     transition: all .2s ease;
     cursor: pointer;
@@ -76,13 +77,13 @@ body {
       position: relative;
       object-fit: contain;
       border-radius: 10px;
-      border: dashed 1.5px #35465d;
+      border: dashed 1.5px #715e2b;
       background-color: #ffffff;
   }
   
   .image-dropping,
   .image-upload-wrap:hover {
-      background-color: #35465d82;
+      background-color: #614b0e82;
       border: 1.5px dashed #ffffff;
   }
   
@@ -109,8 +110,8 @@ body {
   
   .try-again-btn {
     border-radius: 40px;
-    border: solid 1.5px #35465d;
-    background-color: #35465d;
+    border: solid 1.5px #614b0e;
+    background-color: #614b0e;
   }
   
   .try-again-text {
@@ -136,7 +137,7 @@ body {
   .navbar-light .navbar-brand {
     line-height: 1.68;
     text-align: left;
-    color: #35465d; 
+    color: #614b0e; 
     
   }
   
@@ -151,17 +152,21 @@ body {
   .title {
     line-height: 1.67;
     text-align: center;
-    color: #38c6b5;
+    color: #614b0e;
   }
   
   .subtitle {
     line-height: 1.53;
     text-align: center;
-    color: #332862;
+    color: #a89b58;
   }
   .suffix{
     font-size: 0.8rem;
     color: gray;
+  }
+  .cat-moreExplain{
+    font-size: 0.8rem;
+    color:whitesmoke;
   }
   /* On screens that are 600px or less, set the background color to olive */
   @media screen and (max-width: 600px) {
@@ -177,11 +182,11 @@ body {
   }
   
   .upload-text {
-      width: 58%;
+      width: 70%;
       font-size: 1.5rem;
       line-height: 1.53;
       text-align: center;
-      color: #35465d;
+      color: #614b0e;
       margin: 0 auto;
   }
   
@@ -588,10 +593,10 @@ body {
   
   
   .cat-explain {
-      font-size: 1.5rem;
-      color: deepskyblue;
+      font-size: 1.3rem;
+      color: #614b0e;
   }
-
+  
   .샴-cat-title {
       color: rgba(127,103,36);
   }
@@ -670,74 +675,7 @@ body {
     box-shadow: 0 0 0 8px #e5e9ea inset;
     border-radius: 30px;
     position: relative;
-  }
-  
-  .knob {
-    position: absolute;
-    width: 41px;
-    top: 0;
-    left: 0;
-    height: 41px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 8px #f470a7 inset;
-    background-color: #fbd4e6;
-    transition: 0.3s;
-  }
-  
-  .knob > i {
-    position: absolute;
-    width: 4px;
-    height: 18px;
-    top: 100%;
-    background-color: #f470a7;
-    left: calc(50% - 2px);
-  }
-  
-  .knob > i:before,
-  .knob > i:after {
-    width: 6px;
-    position: absolute;
-    top: 42%;
-    content: "";
-    height: 4px;
-    background-color: #f470a7;
-  }
-  
-  .knob > i:before {
-    left: 4px;
-  }
-  .knob > i:after {
-    left: -6px;
-  }
-  
-  input:checked + label > .knob {
-    box-shadow: 0 0 0 8px #a1c6dd inset;
-    background-color: #e2ecf4;
-    transform: translateX(49px) rotate(-140deg);
-  }
-  
-  input:checked + label > .knob > i {
-    background-color: #a1c6dd;
-  }
-  
-  input:checked + label > .knob > i:after,
-  input:checked + label > .knob > i:before {
-    background-color: #a1c6dd;
-  }
-  
-  input:checked + label > .knob > i:after {
-    top: 14.5px;
-    width: 12px;
-    left: -7px;
-    transform: rotate(45deg);
-  }
-  input:checked + label > .knob > i:before {
-    top: 13px;
-    width: 12px;
-    left: 0px;
-    transform: rotate(134deg);
-  }
-  
+  }  
   .ad-banner {
       max-width: 320px;
   }
