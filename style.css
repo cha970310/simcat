@@ -165,8 +165,8 @@ body {
     color: gray;
   }
   .cat-moreExplain{
-    font-size: 0.8rem;
-    color:whitesmoke;
+    font-size: 1.1rem;
+    color:#F5F5DC;
   }
   /* On screens that are 600px or less, set the background color to olive */
   @media screen and (max-width: 600px) {
